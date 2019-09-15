@@ -78,6 +78,8 @@
 
           <div class="col-lg-6 content order-1 wow fadeInUp" style="margin-top: 5%;">
             <h2 class="title">Rebecca Kostell</h2>
+
+            <cms:editable name='about_text' type='richtext' group="about_section" order="-45">
             <h5>
               Originally from Cleveland, Ohio, Rebecca graduated from NYU Steinhardt’s Vocal Performance Program with a
               Bachelor of Music in Music Theatre and a minor in the
@@ -85,6 +87,7 @@
               traveler, Rebecca is currently based out of Los Angeles. </h5>
             <h5>Rebecca has worked at such prestigious venues such as Radio City Music Hall, Avery Fischer at Lincoln
               Center, and Yankee Stadium. </h5>
+            </cms:editable>
 
             <hr>
 
@@ -117,7 +120,7 @@
             </div> -->
           </div>
 
-          <div class="col-lg-6 background order-2 wow fadeInRight"></div>
+          <div class="col-lg-6 background order-2 wow fadeInRight" style="background: url(<cms:show about_image/>)"></div>
         </div>
 
       </div>
@@ -134,6 +137,7 @@
           <hr>
         </div>
         <!-- NEWS ITEM ONE -->
+        <cms:if news_item_1 >
         <div id="news-items">
           <div class="row wow fadeInRight">
             <div class="col-md-4">
@@ -147,6 +151,7 @@
             </div>
           </div>
           <br>
+          </cms:if>
           <!-- NEWS ITEM TWO -->
           <hr>
           <div class="row wow fadeInLeft" style="margin-top: 30px;margin-bottom: 30px;">
@@ -521,6 +526,15 @@
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+  <div style="display:none" type="hidden">
+     <cms:editable name='about_section' label='About' desc='Edit the About section' type='group' />
+     <cms:editable name='about_image'  label='About Image' desc="Upload Your Bio Image Here" type='image' order='-50' show_preview='1' preview_width='150' group="about_section"/>
+     
+     <cms:editable name='news_section' label='News' desc='Edit the News section' type='group' />
+     <cms:editable type='checkbox' name='news_item_1' label="News Item 1" opt_values='Show News Item 1 = 1' group="news_section"/>
+  </div>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

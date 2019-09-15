@@ -503,7 +503,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 600px;
-  background: url(../img/headshots/IMG_0001.JPG);
+  /* background: url(../img/headshots/IMG_0001.JPG); */
   margin-bottom: 10px;
 }
 
