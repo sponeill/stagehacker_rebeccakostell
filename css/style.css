@@ -759,7 +759,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 200px;
+   height: 200px; /*This was originally 200 */
   overflow: hidden !important;
   margin-bottom: 15px;
   transition: all 350ms ease;
@@ -768,7 +768,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item a {
   display: block;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 #portfolio .portfolio-item img {
@@ -1003,4 +1003,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #news-items {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.photo-padding {
+  padding-right: 0px !important;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
 }
