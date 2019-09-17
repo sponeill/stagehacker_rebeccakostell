@@ -59,7 +59,8 @@
   <!--==========================
     Hero Section
   ============================-->
-  <section id="hero">
+  <section id="hero" style="background: url(<cms:show main_image/>) top center;  width: 100%;
+  height: 100vh; background-size: cover; position: relative;">
     <div class="hero-container">
       <!-- <h1>Rebecca Kostell</h1>
       <h2>We are team of talanted designers making websites with Bootstrap</h2>
@@ -141,13 +142,15 @@
         <div id="news-items">
           <div class="row wow fadeInRight">
             <div class="col-md-4">
-              <img src="img/production/IMG_0566.JPG" width="100%">
+              <img src="<cms:show news_item_1_photo/>" width="100%">
             </div>
             <div class="col-md-8" style="padding-top: 3%;">
+            <cms:editable name='news_item_1_text' label="News Item 1 Text" type='richtext' group="news_section" order="-30">
               <h4>The Christmas Queen has returned! Rebecca will heading back out on tour this holiday season, reprising
                 her role as "Lucy" in the National Tour of A Charlie Brown Christmas. Specific tour stops to be
                 announced. For more
                 information, click <a href="https://www.acharliebrownchristmaslive.com/" target="_blank">here</a>.</h4>
+            </cms:editable>
             </div>
           </div>
           <br>
@@ -157,11 +160,13 @@
           <hr>
           <div class="row wow fadeInLeft" style="margin-top: 30px;margin-bottom: 30px;">
             <div class="col-md-4">
-              <img src="img/christmas.jpg" width="100%">
+              <img src="<cms:show news_item_2_photo/>" width="100%">
             </div>
+            <cms:editable name='news_item_2_text' label="News Item 2 Text" type='richtext' group="news_section" order="-20">
             <div class="col-md-8" style="padding-top: 3%;">
               <h4>Rebecca will be spreading cheer this holiday season with LA’s premiere caroling company <a
                   href="https://www.tinseltonecarolers.com" target="_blank">Tinseltone Carolers</a>.</h4>
+                  </cms:editable>
             </div>
           </div>
           </cms:if>
@@ -170,11 +175,13 @@
           <hr>
           <div class="row wow fadeInRight" style="margin-top: 30px;margin-bottom: 30px;">
             <div class="col-md-4">
-              <img src="img/production/IMG_0566.JPG" width="100%">
+              <img src="<cms:show news_item_3_photo/>" width="100%">
             </div>
             <div class="col-md-8" style="padding-top: 3%;">
+            <cms:editable name='news_item_3_text' label="News Item 3 Text" type='richtext' group="news_section" order="-10">
               <h4>There will always be three news item blocks available for you to use. However, you will have the ability to disable each of 
                 them on your admin page, so if you only have 2 pieces of news you will be able to select a checkbox and hide this block until you need it.</h4>
+            </cms:editable>
             </div>
           </div>
           </cms:if>
@@ -256,7 +263,7 @@
         <div class="row">
           <div class="col-lg-12 text-center text-center">
             <h3 class="cta-title">"<cms:show review_quote_text/>"</h3>
-            <p class="cta-text">-<em><cms:show review_quote_text/></em></p>
+            <p class="cta-text">-<em><cms:show review_quote_byline/></em></p>
           </div>
         </div>
 
@@ -533,20 +540,30 @@
 
   <!-- Couch CMS -->
   <div style="display:none" type="hidden">
+   
+    <!-- Main Image -->
+    <cms:editable name='main_image'  label='Main Image' desc="Upload Your Main Image Here" type='image' order='-100' show_preview='1' preview_width='150'/> 
+
     <!-- About -->
      <cms:editable name='about_section' label='About' desc='Edit the About section' type='group' />
      <cms:editable name='about_image'  label='About Image' desc="Upload Your Bio Image Here" type='image' order='-50' show_preview='1' preview_width='150' group="about_section"/>
      
      <!-- News -->
      <cms:editable name='news_section' label='News' desc='Edit the News section' type='group' />
-     <cms:editable type='checkbox' name='news_item_1' label="News Item 1" opt_values='Show News Item 1 = 1' group="news_section"/>
-     <cms:editable type='checkbox' name='news_item_2' label="News Item 2" opt_values='Show News Item 2 = 1' group="news_section"/>
-     <cms:editable type='checkbox' name='news_item_3' label="News Item 3" opt_values='Show News Item 3 = 1' group="news_section"/>
+     <cms:editable type='checkbox' name='news_item_1' label="News Item 1" opt_values='Show News Item 1 = 1' group="news_section" order="-50"/>
+     <cms:editable type='checkbox' name='news_item_2' label="News Item 2" opt_values='Show News Item 2 = 1' group="news_section" order="-45"/>
+     <cms:editable type='checkbox' name='news_item_3' label="News Item 3" opt_values='Show News Item 3 = 1' group="news_section" order="-40"/>
+
+     <cms:editable name='news_item_1_photo'  label='News Item 1 Photo' desc="Upload the Image for News Item 1" type='image' group="news_section" preview_width="150" order="-35" show_preview='1'/>
+
+     <cms:editable name='news_item_2_photo'  label='News Item 2 Photo' desc="Upload the Image for News Item 2" type='image' group="news_section" preview_width="150" order="-25" show_preview='1'/>
+
+     <cms:editable name='news_item_3_photo'  label='News Item 3 Photo' desc="Upload the Image for News Item 3" type='image' group="news_section" preview_width="150" order="-15" show_preview='1'/>
 
      <!-- Review Quote -->
      <cms:editable name='review_quote' label='Review Quote' desc='Edit the Review Quote' type='group' />
      <cms:editable name='review_quote_text'  label='Quote Text' desc="Enter the Quote text" type='text' group="review_quote"/>
-     <cms:editable name='review_quote_byline'  label='Quote Text' desc="Enter the Quote Byline" type='text' group="review_quote"/>
+     <cms:editable name='review_quote_byline'  label='Quote Byline' desc="Enter the Quote Byline" type='text' group="review_quote"/>
   </div>
 
   <!-- JavaScript Libraries -->
