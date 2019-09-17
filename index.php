@@ -79,7 +79,7 @@
           <div class="col-lg-6 content order-1 wow fadeInUp" style="margin-top: 5%;">
             <h2 class="title">Rebecca Kostell</h2>
 
-            <cms:editable name='about_text' type='richtext' group="about_section" order="-45">
+            <cms:editable name='about_text' label="About Text" type='richtext' group="about_section" order="-45">
             <h5>
               Originally from Cleveland, Ohio, Rebecca graduated from NYU Steinhardt’s Vocal Performance Program with a
               Bachelor of Music in Music Theatre and a minor in the
@@ -153,6 +153,7 @@
           <br>
           </cms:if>
           <!-- NEWS ITEM TWO -->
+          <cms:if news_item_2 >
           <hr>
           <div class="row wow fadeInLeft" style="margin-top: 30px;margin-bottom: 30px;">
             <div class="col-md-4">
@@ -163,7 +164,9 @@
                   href="https://www.tinseltonecarolers.com" target="_blank">Tinseltone Carolers</a>.</h4>
             </div>
           </div>
+          </cms:if>
           <!-- NEWS ITEM THREE -->
+          <cms:if news_item_3 >
           <hr>
           <div class="row wow fadeInRight" style="margin-top: 30px;margin-bottom: 30px;">
             <div class="col-md-4">
@@ -174,6 +177,7 @@
                 them on your admin page, so if you only have 2 pieces of news you will be able to select a checkbox and hide this block until you need it.</h4>
             </div>
           </div>
+          </cms:if>
         </div>
       </div>
 
@@ -251,9 +255,8 @@
       <div class="container wow fadeIn">
         <div class="row">
           <div class="col-lg-12 text-center text-center">
-            <h3 class="cta-title">"Lucy was spot on in terms of attitude and sass, thanks to Rebecca Kostell bringing
-              her to life"</em></h3>
-            <p class="cta-text">- REVIEW, <em>A CHARLIE BROWN CHRISTMAS LIVE</em></p>
+            <h3 class="cta-title">"<cms:show review_quote_text/>"</h3>
+            <p class="cta-text">-<em><cms:show review_quote_text/></em></p>
           </div>
         </div>
 
@@ -528,12 +531,22 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
+  <!-- Couch CMS -->
   <div style="display:none" type="hidden">
+    <!-- About -->
      <cms:editable name='about_section' label='About' desc='Edit the About section' type='group' />
      <cms:editable name='about_image'  label='About Image' desc="Upload Your Bio Image Here" type='image' order='-50' show_preview='1' preview_width='150' group="about_section"/>
      
+     <!-- News -->
      <cms:editable name='news_section' label='News' desc='Edit the News section' type='group' />
      <cms:editable type='checkbox' name='news_item_1' label="News Item 1" opt_values='Show News Item 1 = 1' group="news_section"/>
+     <cms:editable type='checkbox' name='news_item_2' label="News Item 2" opt_values='Show News Item 2 = 1' group="news_section"/>
+     <cms:editable type='checkbox' name='news_item_3' label="News Item 3" opt_values='Show News Item 3 = 1' group="news_section"/>
+
+     <!-- Review Quote -->
+     <cms:editable name='review_quote' label='Review Quote' desc='Edit the Review Quote' type='group' />
+     <cms:editable name='review_quote_text'  label='Quote Text' desc="Enter the Quote text" type='text' group="review_quote"/>
+     <cms:editable name='review_quote_byline'  label='Quote Text' desc="Enter the Quote Byline" type='text' group="review_quote"/>
   </div>
 
   <!-- JavaScript Libraries -->
