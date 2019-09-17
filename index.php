@@ -107,21 +107,9 @@
                     target="_blank"><i class="fa fa-envelope"></i></a></div>
               </div>
             </div>
-
-            <!-- <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-photo"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div> -->
           </div>
 
-          <div class="col-lg-6 background order-2 wow fadeInRight" style="background: url(<cms:show about_image/>)"></div>
+          <div class="col-lg-6 background order-2 wow fadeInRight" style="background: url(<cms:show about_image/>); width: 100%; background-size: cover;"></div>
         </div>
 
       </div>
@@ -279,92 +267,83 @@
           <h3 class="section-title">Photos</h3>
           <p class="section-description">Click to expand an image!</p>
         </div>
-        <!-- <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-production, .filter-headshot" class="filter-active">All</li>
-              <li data-filter=".filter-headshot">Headshots</li>
-              <li data-filter=".filter-production">Production Photos</li>
-            </ul>
-          </div>
-        </div> -->
 
         <div class="row" id="portfolio-wrapper">
           <div class="col-lg-3 col-md-6 portfolio-item filter-headshot photo-padding">
-            <a href="img/headshots/IMG_0286.JPG" class="portfolio-image-popup">
-              <img src="img/headshots/IMG_0286.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_1/>>" class="portfolio-image-popup">
+              <img src="<cms:show photo_1/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Rebecca Kostell</h4>
+                <h4><cms:show photo_1_caption/></h4>
                 <!-- <span>Alored dono par</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-headshot photo-padding">
-            <a href="img/headshots/IMG_0001.JPG" class="portfolio-image-popup">
-              <img src="img/headshots/IMG_0001.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_2/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_2/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Rebecca Kostell</h4>
+                <h4><cms:show photo_2_caption/></h4>
                 <!-- <span>Alored dono par</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-headshot photo-padding">
-            <a href="img/headshots/IMG_2979.JPG" class="portfolio-image-popup">
-              <img src="img/headshots/IMG_2979.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_3/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_3/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Rebecca Kostell</h4>
+                <h4><cms:show photo_3_caption/></h4>
                 <!-- <span>Alored dono par</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-headshot photo-padding">
-            <a href="img/headshots/IMG_0293.JPG" class="portfolio-image-popup">
-              <img src="img/headshots/IMG_0293.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_4/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_4/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Rebecca Kostell</h4>
+                <h4><cms:show photo_4_caption/></h4>
                 <!-- <span>Alored dono par</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-production photo-padding">
-            <a href="img/production/IMG_0035.JPG" class="portfolio-image-popup">
-              <img src="img/production/IMG_0035.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_5/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_5/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Caption</h4>
+                <h4><cms:show photo_5_caption/></h4>
                 <!-- <span>Caption</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-production photo-padding">
-            <a href="img/production/IMG_0500_2.jpg" class="portfolio-image-popup">
-              <img src="img/production/IMG_0500_2.jpg" alt="" class="portfolio-image">
+            <a href="<cms:show photo_6/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_6/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Caption</h4>
+                <h4><cms:show photo_6_caption/></h4>
                 <!-- <span>Caption</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-production photo-padding">
-            <a href="img/production/IMG_0480.JPG" class="portfolio-image-popup">
-              <img src="img/production/IMG_0480.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_7/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_7/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Caption</h4>
+                <h4><cms:show photo_7_caption/></h4>
                 <!-- <span>Caption</span> -->
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-production photo-padding">
-            <a href="img/production/IMG_0470.JPG" class="portfolio-image-popup">
-              <img src="img/production/IMG_0470.JPG" alt="" class="portfolio-image">
+            <a href="<cms:show photo_8/>" class="portfolio-image-popup">
+              <img src="<cms:show photo_8/>" alt="" class="portfolio-image">
               <div class="details">
-                <h4>Caption</h4>
+                <h4><cms:show photo_8_caption/></h4>
                 <!-- <span>Caption</span> -->
               </div>
             </a>
@@ -553,17 +532,35 @@
      <cms:editable type='checkbox' name='news_item_1' label="News Item 1" opt_values='Show News Item 1 = 1' group="news_section" order="-50"/>
      <cms:editable type='checkbox' name='news_item_2' label="News Item 2" opt_values='Show News Item 2 = 1' group="news_section" order="-45"/>
      <cms:editable type='checkbox' name='news_item_3' label="News Item 3" opt_values='Show News Item 3 = 1' group="news_section" order="-40"/>
-
      <cms:editable name='news_item_1_photo'  label='News Item 1 Photo' desc="Upload the Image for News Item 1" type='image' group="news_section" preview_width="150" order="-35" show_preview='1'/>
-
      <cms:editable name='news_item_2_photo'  label='News Item 2 Photo' desc="Upload the Image for News Item 2" type='image' group="news_section" preview_width="150" order="-25" show_preview='1'/>
-
      <cms:editable name='news_item_3_photo'  label='News Item 3 Photo' desc="Upload the Image for News Item 3" type='image' group="news_section" preview_width="150" order="-15" show_preview='1'/>
 
      <!-- Review Quote -->
      <cms:editable name='review_quote' label='Review Quote' desc='Edit the Review Quote' type='group' />
      <cms:editable name='review_quote_text'  label='Quote Text' desc="Enter the Quote text" type='text' group="review_quote"/>
      <cms:editable name='review_quote_byline'  label='Quote Byline' desc="Enter the Quote Byline" type='text' group="review_quote"/>
+
+     <!-- Photos -->
+     <cms:editable name='photo_section' label='Photos' desc='Edit the Photo section' type='group' />
+     <cms:editable name='photo_1'  label='Photo 1' desc="Upload Photo 1 Here" type='image' order='-50' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_1_caption'  label='Photo 1 Caption' desc="Enter the Caption for Photo 1" type='text' group="photo_section" order="-45"/>
+     <cms:editable name='photo_2'  label='Photo 2' desc="Upload Photo 2 Here" type='image' order='-40' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_2_caption'  label='Photo 2 Caption' desc="Enter the Caption for Photo 2" type='text' group="photo_section" order="-35"/>
+     <cms:editable name='photo_3'  label='Photo 3' desc="Upload Photo 3 Here" type='image' order='-30' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_3_caption'  label='Photo 3 Caption' desc="Enter the Caption for Photo 3" type='text' group="photo_section" order="-25"/>
+     <cms:editable name='photo_4'  label='Photo 4' desc="Upload Photo 4 Here" type='image' order='-20' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_4_caption'  label='Photo 4 Caption' desc="Enter the Caption for Photo 4" type='text' group="photo_section" order="-15"/>
+
+     <cms:editable name='photo_5'  label='Photo 5' desc="Upload Photo 5 Here" type='image' order='-10' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_5_caption'  label='Photo 5 Caption' desc="Enter the Caption for Photo 5" type='text' group="photo_section" order="-5"/>
+     <cms:editable name='photo_6'  label='Photo 6' desc="Upload Photo 6 Here" type='image' order='0' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_6_caption'  label='Photo =6 Caption' desc="Enter the Caption for Photo 6" type='text' group="photo_section" order="5"/>
+     <cms:editable name='photo_7'  label='Photo 7' desc="Upload Photo 7 Here" type='image' order='10' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_7_caption'  label='Photo 7 Caption' desc="Enter the Caption for Photo 7" type='text' group="photo_section" order="15"/>
+     <cms:editable name='photo_8'  label='Photo 8' desc="Upload Photo 8 Here" type='image' order='20' show_preview='1' preview_width='150' group="photo_section"/>
+     <cms:editable name='photo_8_caption'  label='Photo 8 Caption' desc="Enter the Caption for Photo 8" type='text' group="photo_section" order="25"/>
+
   </div>
 
   <!-- JavaScript Libraries -->
