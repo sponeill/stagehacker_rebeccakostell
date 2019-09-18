@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
       <div id="logo" class="pull-left">
         <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a> -->
         <!-- Uncomment below if you prefer to use a text logo -->
-        <h1><a href="#hero" style="font-family: Lato">Rebecca Kostell</a></h1>
+        <h1><a href="#hero" style="font-family: 'Playfair Display', serif;">Rebecca Kostell</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -78,7 +78,7 @@
         <div class="row about-container">
 
           <div class="col-lg-6 content order-1 wow fadeInUp" style="margin-top: 5%;">
-            <h2 class="title">Rebecca Kostell</h2>
+            <h2 class="title" style="font-family: 'Playfair Display', serif;">Rebecca Kostell</h2>
 
             <cms:editable name='about_text' label="About Text" type='richtext' group="about_section" order="-45">
             <h5>
