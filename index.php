@@ -49,7 +49,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#news">News</a></li>
           <li><a href="#portfolio">Photos</a></li>
-          <li><a href="kostell_resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="<cms:show resume/>" target="_blank">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -561,6 +561,10 @@
      <cms:editable name='photo_8'  label='Photo 8' desc="Upload Photo 8 Here" type='image' order='20' show_preview='1' preview_width='150' group="photo_section"/>
      <cms:editable name='photo_8_caption'  label='Photo 8 Caption' desc="Enter the Caption for Photo 8" type='text' group="photo_section" order="25"/>
 
+
+      <!-- Resume -->
+      <cms:editable name='resume_section' label='Resume' desc='Upload your Resume' type='group' />
+      <cms:editable name='resume' label='Resume' desc="Upload Your Resume Here" type='file' group='resume_section'/>
   </div>
 
   <!-- JavaScript Libraries -->
