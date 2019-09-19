@@ -510,8 +510,9 @@
       <div class="copyright">
         &copy; Copyright <strong>Rebecca Kostell</strong>. All Rights Reserved
       </div>
-      <div>
-      Built by <a href="https://www.stagehacker.com/" target="_blank">StageHacker</a>. Powered by <a href="https://www.couchcms.com/" target="_blank">Couch CMS</a>.
+      <br>
+      <div class="copyright">
+        Built by <a href="https://www.stagehacker.com/" target="_blank" style="color: white; text-decoration:underline;">StageHacker</a>. Powered by <a href="https://www.couchcms.com/" target="_blank" style="color: white; text-decoration:underline;">Couch CMS</a>.
       </div>
 
     </div>
