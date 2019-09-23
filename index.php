@@ -505,7 +505,6 @@
       </div>
     </div>
 
-    <!-- TODO: STAGEHACKER LINK -->
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Rebecca Kostell</strong>. All Rights Reserved
